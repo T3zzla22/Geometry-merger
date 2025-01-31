@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dw0di6mli4mq6"]
+
+[ext_resource type="Texture2D" uid="uid://bhelc74y2dsj6" path="res://Assets/Sprites/enemy_small.png" id="1_hntiu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n0fvj"]
+radius = 48.1664
+
+[node name="enemy_small" type="Sprite2D"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_hntiu")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_n0fvj")
